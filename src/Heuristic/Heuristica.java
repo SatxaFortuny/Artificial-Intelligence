@@ -1,4 +1,5 @@
-abstract class Heuristica {
+package Heuristic;
+public abstract class Heuristica {
 
     abstract double heuristica(int altAct, int altFin);
 

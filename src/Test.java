@@ -1,3 +1,5 @@
+import Algorithms.PathAlgorithm;
+
 public class Test{
 
 

@@ -1,13 +1,14 @@
+package Algorithms;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Node {
     final int tamany = 10;
-    private Estat estat;
+    private State estat;
     private String cami;
     private double heuristica;
 
-    public Node(Estat estat, String cami, double resultat){
+    public Node(State estat, String cami, double resultat){
         this.estat = estat;
         this.cami = cami;
         this.heuristica = resultat;
@@ -16,20 +17,20 @@ public class Node {
     public List<Node> successors(){
         List<Node> list = new LinkedList<>();
         if (estat.getPosX() != 0){
-            list.add(new Node(new Estat(estat.getPosX()-1, estat.getPosY()), cami+"->Esquerra", heuristica));
+            list.add(new Node(new State(estat.getPosX()-1, estat.getPosY()), cami+"->Esquerra", heuristica));
         }
         if (estat.getPosX() != (tamany-1)){
-            list.add(new Node(new Estat(estat.getPosX()+1, estat.getPosY()), cami+"->Dreta", heuristica));
+            list.add(new Node(new State(estat.getPosX()+1, estat.getPosY()), cami+"->Dreta", heuristica));
         }
         if (estat.getPosY() != 0){
-            list.add(new Node(new Estat(estat.getPosX(), estat.getPosY()-1), cami+"->Baix", heuristica));
+            list.add(new Node(new State(estat.getPosX(), estat.getPosY()-1), cami+"->Baix", heuristica));
         }
         if (estat.getPosY() != (tamany-1)){
-            list.add(new Node(new Estat(estat.getPosX(), estat.getPosY()+1), cami+"->Dalt", heuristica));
+            list.add(new Node(new State(estat.getPosX(), estat.getPosY()+1), cami+"->Dalt", heuristica));
         }
     }
 
-    public Estat getEstat() {
+    public State getEstat() {
         return estat;
     }
 
@@ -41,7 +42,7 @@ public class Node {
         return heuristica;
     }
 
-    public void setEstat(Estat estat) {
+    public void setEstat(State estat) {
         this.estat = estat;
     }
 

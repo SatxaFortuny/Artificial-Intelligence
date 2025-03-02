@@ -1,3 +1,4 @@
+package Heuristic;
 public class Heuristica1 extends Heuristica{
 
     public double heuristica(int altAct, int altFin){

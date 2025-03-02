@@ -1,3 +1,4 @@
+package Algorithms;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -9,7 +10,7 @@ public class PathAlgorithm {
 
     protected LinkedList<Integer> map= new LinkedList<>();
     protected int x, y, finalX, finalY;
-    protected List<Estat> tractats;
+    protected List<State> tractats;
     protected List<Node> pendents;
 
     public PathAlgorithm(String fileName, int x, int y, int finalX, int finalY){

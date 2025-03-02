@@ -1,5 +1,8 @@
+package Algorithms;
 import java.util.LinkedList;
 import java.util.List;
+
+import Heuristic.*;
 
 public class BestFit extends PathAlgorithm{
 
@@ -7,7 +10,7 @@ public class BestFit extends PathAlgorithm{
     //protected LinkedList<Integer> map= new LinkedList<>();
     //protected int x, y, finalX, finalY;
     //protected List<Estat> tractats;
-    //protected List<Node> pendents;
+    protected List<Node> pendents;
 
     public BestFit(String fileName, int x, int y, int finalX, int finalY) {
         super(fileName, x, y, finalX, finalY);

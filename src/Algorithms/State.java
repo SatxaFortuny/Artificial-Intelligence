@@ -1,12 +1,13 @@
-public class Estat {
+package Algorithms;
+public class State {
     private int posX, posY;
 
-    public Estat(int posX, int posY){
+    public State(int posX, int posY){
         this.posX = posX;
         this.posY = posY;
     }
 
-    public boolean isEquals(Estat e){
+    public boolean isEquals(State e){
         return (e.getPosX() == posX) && (e.getPosY() == posY);
     }
 
