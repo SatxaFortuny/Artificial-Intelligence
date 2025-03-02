@@ -1,14 +1,16 @@
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class PathAlgorithm {
 
-    private LinkedList<Integer> map= new LinkedList<>();
-    private int x, y, finalX, finalY;
+    protected LinkedList<Integer> map= new LinkedList<>();
+    protected int x, y, finalX, finalY;
+    protected List<Estat> tractats;
+    protected List<Node> pendents;
 
     public PathAlgorithm(String fileName, int x, int y, int finalX, int finalY){
         try{
@@ -30,27 +32,8 @@ public class PathAlgorithm {
         }
         catch(Exception e){
             System.err.println(e);
-        }
-        
+        }   
     }
 
-    /*public PathAlgorithm(LinkedList<Integer> map, int x, int y, int finalX, int finalY){
-        this.map = map;
-        this.x=x;
-        this.y=y;
-        this.finalX=finalX;
-        this.finalY=finalY;
-    }*/
 
-    public void getMap(){
-        //System.out.println(map.toString());
-        System.out.println(map.size());
-        /*for (int i = 0; i < 10; i++){
-            String p = "";
-            for (int j = 0; j < 10; i++){
-                p=p+" "+map.get(i*10+j);
-            }
-            System.out.println(p);
-        }*/
-    }
 }
