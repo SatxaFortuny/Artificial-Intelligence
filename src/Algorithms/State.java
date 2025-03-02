@@ -26,4 +26,8 @@ public class State {
     public void setPosY(int posY) {
         this.posY = posY;
     }
+
+    public String toString(){
+        return "PosX: "+posX+" | PosY: "+posY+"\n";
+    }
 }

@@ -17,17 +17,18 @@ public class Node {
     public List<Node> successors(){
         List<Node> list = new LinkedList<>();
         if (estat.getPosX() != 0){
-            list.add(new Node(new State(estat.getPosX()-1, estat.getPosY()), cami+"->Esquerra", heuristica));
+            list.add(new Node(new State(estat.getPosX()-1, estat.getPosY()), cami+"->Left", heuristica));
         }
         if (estat.getPosX() != (tamany-1)){
-            list.add(new Node(new State(estat.getPosX()+1, estat.getPosY()), cami+"->Dreta", heuristica));
+            list.add(new Node(new State(estat.getPosX()+1, estat.getPosY()), cami+"->Right", heuristica));
         }
         if (estat.getPosY() != 0){
-            list.add(new Node(new State(estat.getPosX(), estat.getPosY()-1), cami+"->Baix", heuristica));
+            list.add(new Node(new State(estat.getPosX(), estat.getPosY()-1), cami+"->Down", heuristica));
         }
         if (estat.getPosY() != (tamany-1)){
-            list.add(new Node(new State(estat.getPosX(), estat.getPosY()+1), cami+"->Dalt", heuristica));
+            list.add(new Node(new State(estat.getPosX(), estat.getPosY()+1), cami+"->Up", heuristica));
         }
+        return list;
     }
 
     public State getEstat() {
@@ -52,5 +53,9 @@ public class Node {
 
     public void setHeuristica(double heuristica) {
         this.heuristica = heuristica;
+    }
+
+    public String toString(){
+        return estat.toString() + "Cami: " + cami + " Heuristic: " + heuristica;
     }
 }
