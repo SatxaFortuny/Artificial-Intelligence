@@ -3,15 +3,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Node {
-    final int tamany = 10;
     private State estat;
     private String cami;
     private double heuristica;
+    private double time;
 
     public Node(State estat, String cami, double resultat){
         this.estat = estat;
         this.cami = cami;
         this.heuristica = resultat;
+        time = 0;
     }
 
     public List<Node> successors(){
@@ -19,16 +20,24 @@ public class Node {
         if (estat.getPosX() != 0){
             list.add(new Node(new State(estat.getPosX()-1, estat.getPosY()), cami+"->Left", heuristica));
         }
-        if (estat.getPosX() != (tamany-1)){
+        if (estat.getPosX() != (Size.SIZE-1)){
             list.add(new Node(new State(estat.getPosX()+1, estat.getPosY()), cami+"->Right", heuristica));
         }
         if (estat.getPosY() != 0){
             list.add(new Node(new State(estat.getPosX(), estat.getPosY()-1), cami+"->Up", heuristica));
         }
-        if (estat.getPosY() != (tamany-1)){
+        if (estat.getPosY() != (Size.SIZE-1)){
             list.add(new Node(new State(estat.getPosX(), estat.getPosY()+1), cami+"->Down", heuristica));
         }
         return list;
+    }
+
+    public void setTime(double time){
+        this.time = time;
+    }
+
+    public double getTime(){
+        return time;
     }
 
     public State getEstat() {

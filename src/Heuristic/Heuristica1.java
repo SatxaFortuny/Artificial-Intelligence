@@ -6,18 +6,17 @@ import Algorithms.State;
 
 public class Heuristica1 extends Heuristica{
 
-
-    public double heuristica(List<Integer> map, State current, State next, State end){
-
-        int currentAltitude = map.get(current.getPosY()*Size.SIZE + current.getPosX());
-        int nextAltitude = map.get(next.getPosY()*Size.SIZE + next.getPosX());
-        
-        if (currentAltitude <= nextAltitude){
-            return (1 + (nextAltitude-currentAltitude));
+	@Override
+	public double heuristica(List<Integer> map, State actual, State successor, State end) {
+        int actualAltitude = map.get(actual.getPosY()*Size.SIZE + actual.getPosX());
+		int nextAltitude = map.get(successor.getPosY()*Size.SIZE + successor.getPosX());
+        int finalAltitude = map.get(end.getPosY()*Size.SIZE + end.getPosX());
+        if (actualAltitude <= nextAltitude){
+            return (nextAltitude-actualAltitude) + Math.abs(finalAltitude-nextAltitude);
         }
         else {
-            return (1 + (currentAltitude-nextAltitude)/(double)2);
+            return (actualAltitude-nextAltitude)/(double)2 + Math.abs(finalAltitude-nextAltitude);
         }
-    }
-
+        //return Math.abs(finalAltitude-nextAltitude);
+	}
 }

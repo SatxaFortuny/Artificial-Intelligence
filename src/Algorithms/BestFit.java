@@ -18,18 +18,20 @@ public class BestFit extends PathAlgorithm{
         super(fileName, x, y, finalX, finalY);
     }
     
-    public String cerca(Heuristica h){
+    public Solution cerca(Heuristica h){
         this.pendents = new LinkedList<>();
         this.tractats = new LinkedList<>();
         pendents.add(new Node(this.current, null, 0));
         boolean trobat = false;
-        String solucio = "";
+        Solution solution = new Solution("",0,0);
+        int nIteration = 0;
         while ((!trobat) && (!pendents.isEmpty())){
             Node node = pendents.get(0);
             pendents.remove(0);
             if (node.getEstat().isEquals(this.end)){
                 trobat = true;
-                solucio = node.getCami();
+                solution.setPath(node.getCami());
+                solution.setTime(node.getTime());
             }
             else{
                 List<Node> succ = node.successors();
@@ -39,16 +41,21 @@ public class BestFit extends PathAlgorithm{
                     && !pendents.stream().anyMatch(x -> x.getEstat().isEquals(successor.getEstat()))){
                         // Calcular nou heuristic
                         successor.setHeuristica(h.heuristica(this.map, node.getEstat(), successor.getEstat(), this.end));
+                        successor.setTime(node.getTime()+this.calculeTime(node.getEstat(),successor.getEstat()));
                         pendents.add(successor);
                         pendents = pendents.stream().sorted(Comparator.comparing(Node::getHeuristica))
                                 .collect(Collectors.toList());
+                        nIteration++;
                     }
                 }
                 tractats.add(node.getEstat());
             }
         } 
-        if (trobat) return solucio;
-        else return "No existeix camí";
+        solution.setIteration(nIteration);
+        if (trobat) return solution;
+        else{
+            return null;
+        }
 
     }
 }

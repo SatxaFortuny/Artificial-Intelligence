@@ -35,6 +35,17 @@ abstract class PathAlgorithm {
         }   
     }
 
+    public double calculeTime(State actual, State successor){
+        int actualAltitude = map.get(actual.getPosY()*Size.SIZE + actual.getPosX());
+		int nextAltitude = map.get(successor.getPosY()*Size.SIZE + successor.getPosX());
+        if (actualAltitude <= nextAltitude){
+            return 1+(nextAltitude-actualAltitude);
+        }
+        else {
+            return 1+(actualAltitude-nextAltitude)/(double)2;
+        }
+    }
+
     public List<Node> filterStates(List<Node> list){
         List<Node> result = new LinkedList<>();
         for (Node node:list){

@@ -1,6 +1,3 @@
-import java.util.LinkedList;
-import java.util.List;
-
 import Algorithms.*;
 import Heuristic.*;
 
@@ -8,8 +5,9 @@ public class Test{
     public static void main(String[] args) {
         BestFit kevin = new BestFit("map.txt", 0, 0, 9, 9);
         kevin.seeMap();
+        System.out.println("Heuristic1: ");
         System.out.println(kevin.cerca(new Heuristica1()));
-
+        System.out.println("Heuristic2: ");
         System.out.println(kevin.cerca(new Heuristica2()));
 
        /* List<Node> lis = new LinkedList<>();
@@ -17,4 +15,5 @@ public class Test{
         System.out.println((kevin.filterStates(lis)).toString());*/
 
     }
+
 }

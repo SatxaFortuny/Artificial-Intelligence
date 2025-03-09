@@ -22,4 +22,20 @@ public class Solution {
     public int getIteration(){
         return nIteration;
     }
+
+    public void setPath(String path){
+        this.path = path;
+    }
+
+    public void setTime(double time){
+        this.time = time;
+    }
+
+    public void setIteration(int it){
+        this.nIteration = it;
+    }
+
+    public String toString(){
+        return "Path: "+this.path+"\nTime: "+this.time+"\nIterations: "+this.nIteration+"\n";
+    }
 }
