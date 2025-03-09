@@ -36,8 +36,8 @@ public class AStar extends PathAlgorithm{
                             successor.setHeuristica(h.heuristica(this.map, node.getEstat(), successor.getEstat(), this.end));
                             successor.setTime(node.getTime()+this.calculeTime(node.getEstat(),successor.getEstat()));
                             pendents.add(successor);
-                            // TODO - Order by time+heurictic
-                            pendents = pendents.stream().sorted(Comparator.comparing())
+                            // Order by time+heurictic
+                            pendents = pendents.stream().sorted(Comparator.comparing(x -> (x.getTime()+x.getHeuristica())))
                                 .collect(Collectors.toList());
                         }
                         else{   //If new path is less expensive
@@ -45,7 +45,7 @@ public class AStar extends PathAlgorithm{
                             if (newTime < successor.getTime()){
                                 successor.setHeuristica(h.heuristica(this.map, node.getEstat(), successor.getEstat(), this.end));
                                 successor.setTime(newTime);
-                                pendents = pendents.stream().sorted(Comparator.comparing())
+                                pendents = pendents.stream().sorted(Comparator.comparing(x -> (x.getTime()+x.getHeuristica())))
                                         .collect(Collectors.toList());
                             }
                         }

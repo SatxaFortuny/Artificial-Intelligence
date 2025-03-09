@@ -10,7 +10,7 @@ public class HeuristicTests {
     public HeuristicTests() {
     }
 
-    public static List<Integer> initializer(String fileName){
+    /*public static List<Integer> initializer(String fileName){
         try{
             String line;
             BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -71,6 +71,6 @@ public class HeuristicTests {
         Assert.assertEquals("", 
             , 
             heuristica.heuristica(map, , ));
-    }
+    }*/
 
 }
