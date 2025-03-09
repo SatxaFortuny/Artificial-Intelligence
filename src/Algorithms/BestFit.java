@@ -21,7 +21,7 @@ public class BestFit extends PathAlgorithm{
     public Solution cerca(Heuristica h){
         this.pendents = new LinkedList<>();
         this.tractats = new LinkedList<>();
-        pendents.add(new Node(this.current, null, 0));
+        pendents.add(new Node(this.current, "", 0));
         boolean trobat = false;
         Solution solution = new Solution("",0,0);
         int nIteration = 0;
@@ -54,7 +54,8 @@ public class BestFit extends PathAlgorithm{
         solution.setIteration(nIteration);
         if (trobat) return solution;
         else{
-            return null;
+            solution.setPath("No solution");
+            return solution;
         }
 
     }
