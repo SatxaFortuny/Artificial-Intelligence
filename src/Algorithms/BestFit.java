@@ -2,6 +2,7 @@ package Algorithms;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import Heuristic.*;
 
@@ -39,7 +40,8 @@ public class BestFit extends PathAlgorithm{
                         // Calcular nou heuristic
                         successor.setHeuristica(h.heuristica(this.map, node.getEstat(), successor.getEstat(), this.end));
                         pendents.add(successor);
-                        pendents = pendents.stream().sorted(Comparator.comparing(Node::getHeuristica)).toList();
+                        pendents = pendents.stream().sorted(Comparator.comparing(Node::getHeuristica))
+                                .collect(Collectors.toList());
                     }
                 }
                 tractats.add(node.getEstat());

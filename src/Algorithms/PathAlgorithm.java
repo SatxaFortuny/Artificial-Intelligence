@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 abstract class PathAlgorithm {
-    final int size = 10;
     protected List<Integer> map = new LinkedList<>();
     protected State current;
     protected State end;
@@ -26,6 +25,7 @@ abstract class PathAlgorithm {
                     map.add(Integer.parseInt(tokenizer.nextToken()));
                 }
             }
+            br.close();
         }
         catch(FileNotFoundException e){
             System.err.println(e);
@@ -38,7 +38,7 @@ abstract class PathAlgorithm {
     public List<Node> filterStates(List<Node> list){
         List<Node> result = new LinkedList<>();
         for (Node node:list){
-            if (map.get(node.getEstat().getPosX()+size*node.getEstat().getPosY()) != -1) result.add(node);
+            if (map.get(node.getEstat().getPosX()+Size.SIZE*node.getEstat().getPosY()) != -1) result.add(node);
         }
         return result;
     }

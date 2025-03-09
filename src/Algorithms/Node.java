@@ -23,10 +23,10 @@ public class Node {
             list.add(new Node(new State(estat.getPosX()+1, estat.getPosY()), cami+"->Right", heuristica));
         }
         if (estat.getPosY() != 0){
-            list.add(new Node(new State(estat.getPosX(), estat.getPosY()-1), cami+"->Down", heuristica));
+            list.add(new Node(new State(estat.getPosX(), estat.getPosY()-1), cami+"->Up", heuristica));
         }
         if (estat.getPosY() != (tamany-1)){
-            list.add(new Node(new State(estat.getPosX(), estat.getPosY()+1), cami+"->Up", heuristica));
+            list.add(new Node(new State(estat.getPosX(), estat.getPosY()+1), cami+"->Down", heuristica));
         }
         return list;
     }
