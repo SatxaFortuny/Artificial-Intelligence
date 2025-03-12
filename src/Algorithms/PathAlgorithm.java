@@ -60,18 +60,15 @@ abstract class PathAlgorithm {
         String sol = "";
         State state = new State(0, 0);
         int pos = 0;
-        int posS = 1;
-        for(Integer i:map){
-            if (pos == (state.getPosY()*Size.SIZE + state.getPosX())){
-                mapMov.add(this.searchCharacter(mov[posS]));
-                if (posS != (mov.length -1)) state = this.updateState(state, mov[posS]);
-                posS++;
+        for (Integer i:map){
+            if (i == -1) mapMov.add("[*]");
+            else mapMov.add(".");
+        }
+        for(String s:mov){
+            if (s != ""){
+                mapMov.set(state.getPosY()*Size.SIZE + state.getPosX(), this.searchCharacter(s));
+                state = this.updateState(state, s);
             }
-            else {
-                if (i == -1) mapMov.add("[*]");
-                else mapMov.add(".");
-            }
-            pos++;
         }
         pos = 0;
         for(String s:mapMov){

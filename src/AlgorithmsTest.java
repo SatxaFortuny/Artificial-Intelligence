@@ -16,7 +16,7 @@ public class AlgorithmsTest {
         Solution solution = test.cerca(new Heuristica1());
         System.out.println(solution);
         Assert.assertEquals("Path checked manually", 
-            "->Right->Right->Right->Down->Down->Right->Down->Down->Right->Right->Right->Down->Down->Down->Down->Right->Right->Down", 
+            "->Right->Down->Right->Right->Down->Down->Right->Down->Right->Right->Down->Down->Right->Down->Right->Down->Right->Down", 
             solution.getPath());
     }
 
@@ -28,7 +28,7 @@ public class AlgorithmsTest {
         Solution solution = test.cerca(new Heuristica2());
         System.out.println(solution);
         Assert.assertEquals("Path checked manually", 
-            "->Right->Right->Right->Right->Down->Right->Right->Right->Right->Right->Down->Down->Down->Down->Left->Down->Down->Right->Down->Down", 
+            "->Right->Down->Down->Down->Down->Down->Right->Down->Down->Right->Down->Right->Right->Right->Right->Right->Right->Down", 
             solution.getPath());
     }
 
@@ -52,7 +52,7 @@ public class AlgorithmsTest {
         Solution solution = test.cerca(new Heuristica1());
         System.out.println(solution);
         Assert.assertEquals("Path checked manually", 
-            "->Right->Right->Right->Down->Down->Right->Down->Down->Right->Right->Right->Down->Down->Down->Down->Right->Right->Down", 
+            "->Right->Down->Right->Right->Down->Down->Down->Right->Down->Down->Right->Right->Right->Right->Down->Down->Right->Down", 
             solution.getPath());
     }
 
@@ -64,7 +64,7 @@ public class AlgorithmsTest {
         Solution solution = test.cerca(new Heuristica2());
         System.out.println(solution);
         Assert.assertEquals("Path checked manually", 
-            "->Right->Right->Right->Right->Down->Right->Right->Right->Right->Right->Down->Down->Down->Down->Left->Down->Down->Right->Down->Down", 
+            "->Right->Down->Down->Down->Down->Down->Right->Down->Down->Right->Down->Right->Right->Right->Right->Right->Right->Down", 
             solution.getPath());
     }
 
@@ -76,7 +76,7 @@ public class AlgorithmsTest {
         Solution solution = test.cerca(new Heuristica3());
         System.out.println(solution);
         Assert.assertEquals("Path checked manually", 
-            "->Right->Right->Right->Right->Down->Right->Right->Right->Right->Right->Down->Down->Down->Down->Left->Down->Down->Right->Down->Down", 
+            "->Right->Down->Down->Down->Down->Down->Right->Down->Down->Right->Down->Right->Right->Down->Right->Right->Right->Right", 
             solution.getPath());
     }
 }
