@@ -58,8 +58,8 @@ public class AStar extends PathAlgorithm{
         solution.setIteration(nIteration);
         if (trobat) return solution;
         else{
-            return null;
+            solution.setPath("No solution");
+            return solution;
         }
-
     }
 }

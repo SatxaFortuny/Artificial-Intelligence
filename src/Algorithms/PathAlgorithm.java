@@ -67,7 +67,10 @@ abstract class PathAlgorithm {
                 if (posS != (mov.length -1)) state = this.updateState(state, mov[posS]);
                 posS++;
             }
-            else mapMov.add(String.valueOf(i));
+            else {
+                if (i == -1) mapMov.add("[*]");
+                else mapMov.add(".");
+            }
             pos++;
         }
         pos = 0;

@@ -57,6 +57,5 @@ public class BestFit extends PathAlgorithm{
             solution.setPath("No solution");
             return solution;
         }
-
     }
 }
