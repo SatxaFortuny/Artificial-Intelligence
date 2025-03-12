@@ -1,4 +1,9 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,7 +15,8 @@ public class HeuristicTests {
     public HeuristicTests() {
     }
 
-    /*public static List<Integer> initializer(String fileName){
+    public static List<Integer> initializer(String fileName){
+        List<Integer> map = new LinkedList<>();
         try{
             String line;
             BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -21,14 +27,14 @@ public class HeuristicTests {
                 }
             }
             br.close();
-            return map;
         }
         catch(FileNotFoundException e){
             System.err.println(e);
         }
         catch(Exception e){
             System.err.println(e);
-        }   
+        }
+        return map;   
     }
 
     @Test
@@ -71,6 +77,5 @@ public class HeuristicTests {
         Assert.assertEquals("", 
             , 
             heuristica.heuristica(map, , ));
-    }*/
-
+    }
 }
