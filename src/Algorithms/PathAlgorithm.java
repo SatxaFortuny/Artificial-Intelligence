@@ -54,8 +54,61 @@ abstract class PathAlgorithm {
         return result;
     }
 
-    public String seeMap(){
-        return map.toString();
+    public String seeMap(String recorregut){
+        List<String> mapMov = new LinkedList<>();
+        String[] mov = recorregut.split("->");
+        String sol = "";
+        State state = new State(0, 0);
+        int pos = 0;
+        int posS = 1;
+        for(Integer i:map){
+            if (pos == (state.getPosY()*Size.SIZE + state.getPosX())){
+                mapMov.add(this.searchCharacter(mov[posS]));
+                if (posS != (mov.length -1)) state = this.updateState(state, mov[posS]);
+                posS++;
+            }
+            else mapMov.add(String.valueOf(i));
+            pos++;
+        }
+        pos = 0;
+        for(String s:mapMov){
+            if (pos % Size.SIZE == 0) sol+="\n";
+            sol+=s+"\t";
+            pos++;
+        }
+        return sol+"\n";
+    }
+
+    private String searchCharacter(String value){
+        switch (value){
+            case "Right":
+                return ">";
+            case "Left":
+                return "<";
+            case "Up":
+                return "¡";
+            case "Down":
+                return "!";
+        }
+        return "";
+    }
+
+    private State updateState(State state, String value){
+        switch (value){
+            case "Right":
+                state.setPosX(state.getPosX()+1);
+                return state;
+            case "Left":
+                state.setPosX(state.getPosX()-1);
+                return state;
+            case "Up":
+                state.setPosY(state.getPosY()-1);
+                return state;
+            case "Down":
+                state.setPosY(state.getPosY()+1);
+                return state;
+        }
+        return null;
     }
 }
 
