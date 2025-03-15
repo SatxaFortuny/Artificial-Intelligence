@@ -8,8 +8,8 @@ public class Heuristica3 implements Heuristica {
 
     @Override
     public double heuristica(List<Integer> map, State actual, State successor, State end) {
-        int movX = ((Size.SIZE-1)-successor.getPosX());
-        int movY = ((Size.SIZE-1)-successor.getPosY());
+        int movX = Math.abs((end.getPosX())-successor.getPosX());
+        int movY = Math.abs((end.getPosY())-successor.getPosY());
         int j = obtainPenalization(map,successor,end);
         return movX+movY+4*j;
     }
