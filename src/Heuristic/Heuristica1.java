@@ -3,7 +3,7 @@ import java.util.List;
 
 import Algorithms.State;
 
-public class Heuristica1 extends Heuristica{
+public class Heuristica1 implements Heuristica{
 
 	@Override
 	public double heuristica(List<Integer> map, State actual, State successor, State end) {
