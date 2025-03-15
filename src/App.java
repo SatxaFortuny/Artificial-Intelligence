@@ -3,7 +3,7 @@ import Heuristic.*;
 
 public class App{
     public static void main(String[] args) {
-        BestFit best = new BestFit("map.txt", 0, 0, 9, 9);
+        BestFirst best = new BestFirst("map.txt", 0, 0, 9, 9);
         AStar star = new AStar("map.txt", 0, 0, 9, 9);
 
         System.out.println("BF - Heuristic1: ");
@@ -36,7 +36,7 @@ public class App{
         System.out.println(solA3);
         System.out.println("Mapa A3:"+star.seeMap(solA3.getPath()));
 
-        
+        /* 
         best = new BestFit("mapInv.txt", 0, 0, 9, 9);
         star = new AStar("mapInv.txt", 0, 0, 9, 9);
 
@@ -68,7 +68,7 @@ public class App{
         System.out.println("A* - Heuristic3: ");
         solA3 = star.cerca(new Heuristica3());
         System.out.println(solA3);
-        System.out.println("Mapa A3:"+star.seeMap(solA3.getPath()));
+        System.out.println("Mapa A3:"+star.seeMap(solA3.getPath()));*/
     }
 
 }

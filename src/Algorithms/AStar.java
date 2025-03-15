@@ -15,10 +15,16 @@ public class AStar extends PathAlgorithm{
     public Solution cerca(Heuristica h){
         this.pendents = new LinkedList<>();
         this.tractats = new LinkedList<>();
-        pendents.add(new Node(this.current, "", 0));
         boolean trobat = false;
         Solution solution = new Solution("",0,0);
         int nIteration = 0;
+        if (correctInitialValues()) {
+            pendents.add(new Node(this.current, "", 0));
+        }
+        else{
+            solution.setPath("Initial values are incorrect");
+            return solution;
+        }
         while ((!trobat) && (!pendents.isEmpty())){
             Node node = pendents.get(0);
             pendents.remove(0);

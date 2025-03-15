@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 import Heuristic.*;
 
-public class BestFit extends PathAlgorithm{
+public class BestFirst extends PathAlgorithm{
 
     //protected LinkedList<Integer> map= new LinkedList<>();
     //protected State current;
@@ -14,17 +14,23 @@ public class BestFit extends PathAlgorithm{
     //protected List<State> tractats;
     //protected List<Node> pendents;
 
-    public BestFit(String fileName, int x, int y, int finalX, int finalY) {
+    public BestFirst(String fileName, int x, int y, int finalX, int finalY) {
         super(fileName, x, y, finalX, finalY);
     }
     
     public Solution cerca(Heuristica h){
         this.pendents = new LinkedList<>();
         this.tractats = new LinkedList<>();
-        pendents.add(new Node(this.current, "", 0));
         boolean trobat = false;
         Solution solution = new Solution("",0,0);
         int nIteration = 0;
+        if (correctInitialValues()) {
+            pendents.add(new Node(this.current, "", 0));
+        }
+        else{
+            solution.setPath("Initial values are incorrect");
+            return solution;
+        }
         while ((!trobat) && (!pendents.isEmpty())){
             Node node = pendents.get(0);
             pendents.remove(0);

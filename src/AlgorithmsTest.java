@@ -10,7 +10,7 @@ public class AlgorithmsTest {
 
     @Test
     public void testBestFitH1() {
-        BestFit test = new BestFit("map.txt", 0, 0, 9, 9);
+        BestFirst test = new BestFirst("map.txt", 0, 0, 9, 9);
         //test.seeMap();
         System.out.println("BESTFIT - Heuristic1: ");
         Solution solution = test.cerca(new Heuristica1());
@@ -22,7 +22,7 @@ public class AlgorithmsTest {
 
     @Test
     public void testBestFitH2() {
-        BestFit test = new BestFit("map.txt", 0, 0, 9, 9);
+        BestFirst test = new BestFirst("map.txt", 0, 0, 9, 9);
         //test.seeMap();
         System.out.println("BESTFIT - Heuristic2: ");
         Solution solution = test.cerca(new Heuristica2());
@@ -34,7 +34,7 @@ public class AlgorithmsTest {
 
     @Test
     public void testBestFitH3() {
-        BestFit test = new BestFit("map.txt", 0, 0, 9, 9);
+        BestFirst test = new BestFirst("map.txt", 0, 0, 9, 9);
         //test.seeMap();
         System.out.println("BESTFIT - Heuristic3: ");
         Solution solution = test.cerca(new Heuristica3());

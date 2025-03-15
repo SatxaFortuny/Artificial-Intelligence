@@ -1,7 +1,6 @@
 package Heuristic;
 import java.util.List;
 
-import Algorithms.Size;
 import Algorithms.State;
 
 public class Heuristica1 extends Heuristica{

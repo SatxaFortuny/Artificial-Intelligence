@@ -54,11 +54,19 @@ abstract class PathAlgorithm {
         return result;
     }
 
+    public boolean correctInitialValues(){
+        if (current.getPosX() < 0 || current.getPosX() > Size.SIZE) return false;
+        if (current.getPosY() < 0 || current.getPosY() > Size.SIZE) return false;
+        if (map.get(current.getPosX()*Size.SIZE + current.getPosX()) == -1) return false;
+        if (map.get(end.getPosX()*Size.SIZE + end.getPosX()) == -1) return false;
+        return true;
+    }
+
     public String seeMap(String recorregut){
         List<String> mapMov = new LinkedList<>();
         String[] mov = recorregut.split("->");
         String sol = "";
-        State state = new State(0, 0);
+        State state = new State(this.current.getPosX(), this.current.getPosY());
         int pos = 0;
         for (Integer i:map){
             if (i == -1) mapMov.add("[*]");
@@ -70,6 +78,7 @@ abstract class PathAlgorithm {
                 state = this.updateState(state, s);
             }
         }
+        mapMov.set(this.end.getPosY()*Size.SIZE + this.end.getPosX(), "X");
         pos = 0;
         for(String s:mapMov){
             if (pos % Size.SIZE == 0) sol+="\n";
