@@ -55,7 +55,7 @@ public class BestFirst extends PathAlgorithm{
                     }
                 }
                 tractats.add(node.getEstat());
-            }
+            } 
         } 
         solution.setIteration(nIteration);
         if (trobat) return solution;

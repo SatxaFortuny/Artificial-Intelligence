@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AppMap1",
+            "request": "launch",
+            "mainClass": "AppMap1",
+            "projectName": "Artificial-Intelligence_46cfb237"
+        },
+        {
+            "type": "java",
+            "name": "AppMap2",
+            "request": "launch",
+            "mainClass": "AppMap2",
+            "projectName": "Artificial-Intelligence_46cfb237"
+        },
+        {
+            "type": "java",
             "name": "AppMap2",
             "request": "launch",
             "mainClass": "AppMap2",

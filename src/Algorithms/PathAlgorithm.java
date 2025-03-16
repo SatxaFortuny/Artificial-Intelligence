@@ -95,9 +95,9 @@ abstract class PathAlgorithm {
             case "Left":
                 return "<";
             case "Up":
-                return "¡";
+                return "^";
             case "Down":
-                return "!";
+                return "v";
         }
         return "";
     }
