@@ -1,0 +1,2850 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9/"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#restriction -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#restriction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#brawlerPotenciado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#brawlerPotenciado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esAspectoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esAspectoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAspecto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esBuenoEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esBuenoEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esGadgetDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esGadgetDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneGadget"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadEstelarDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadEstelarDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidadEstelar"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHipercargaDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHipercargaDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esHabilidadDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHipercarga"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#perteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#perteneceA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:comment>Los títulos de jugador hacen referencia a un Brawler en concreto, representando una característica suya.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#perteneceATema -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#perteneceATema">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAspecto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAspecto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAtaque -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAtaque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneGadget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneGadget">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidad"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidadEstelar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidadEstelar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidad"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHipercarga -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHipercarga">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidad"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneMapa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneMapa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRareza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRareza">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#augmentaEstadistica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#augmentaEstadistica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#compraConBlines -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#compraConBlines">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#duraciónEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#duraciónEvento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esTemporal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esTemporal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeColaboración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Esta propiedad indica si la instáncia esta durante un tiempo limitado en el juego.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#estáDisponible -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#estáDisponible">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#gemasParaTerminarPartida -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#gemasParaTerminarPartida">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atrapagemas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#golesParaTerminarPartida -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#golesParaTerminarPartida">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#BalonBrawl"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#jugadoresEnPartida -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#jugadoresEnPartida">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#numeroAtaquesPrincipales -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#numeroAtaquesPrincipales">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneEstadistica"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#relaciónTemporadaCompetitiva -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#relaciónTemporadaCompetitiva">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Todas las temporadas del modo de juego competitivo esta relacionado con un evento en el Competitivo de Brawl Stars (Championship), donde juegan los mejores equipos de cada región.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#seRecargaEnSegundos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#seRecargaEnSegundos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tiempoDeJuego -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tiempoDeJuego">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneDañoDe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneDañoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneEstadistica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneEstadistica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneVida -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneVida">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneEstadistica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorBaseEnGemas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorBaseEnGemas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#vidaCaja -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#vidaCaja">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atraco"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#perteneceATema"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorBaseEnGemas"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">299</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los aspectos tienen un valor en gemas entre 29 i 299, dependiendo de su rareza.</untitled-ontology-9:restriction>
+        <untitled-ontology-9:restriction>Todos los aspectos tiene que pertenecer mínimo a un Tema. En Brawl Stars todas las skins salen con una o varias temáticas en concreto.</untitled-ontology-9:restriction>
+        <rdfs:comment>Representa los distintos aspectos que puede tener un personaje en el juego.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoBrawlPass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoBrawlPass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeEvento"/>
+        <rdfs:comment>Aspecto exclusivo desbloqueable a través del Brawl Pass. Brawl Pass es un pase de batalla.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeColaboración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeColaboración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeEvento"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esTemporal"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los aspectos que son de colaboración están disponibles durante un tiempo limitado en la tienda.</untitled-ontology-9:restriction>
+        <rdfs:comment>Aspecto que surge de colaboraciones externas con otras franquicias.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeEvento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeEvento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#compraConBlines"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los blines son un recurso muy fácil de adquirir, entonces los aspectos de evento no tienen un precio con este recurso.</untitled-ontology-9:restriction>
+        <rdfs:comment>Aspecto disponible durante eventos especiales del juego.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorBaseEnGemas"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRareza"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los aspectos dorados no tienen rareza, entonces no se puede comprar con gemas. Se puede adquirir por exactamente 25000 de oro.</untitled-ontology-9:restriction>
+        <rdfs:comment>Apariencia adquirible con monedas. Es la apariencia base del Brawler pero de color dorado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoHipercargado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoHipercargado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeEvento"/>
+        <rdfs:comment>Apariencia especial que evoluciona en cuando el Brawler usa su hipercarga.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorBaseEnGemas"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRareza"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los aspectos dorados no tienen rareza, entonces no se puede comprar con gemas. Se puede adquirir por exactamente 10000 de oro.</untitled-ontology-9:restriction>
+        <rdfs:comment>Apariencia adquirible con monedas. Es la apariencia base del Brawler pero de color plateado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadActiva"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneDañoDe"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">320</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Todos los ataques principales tienen un valor de daño mínimo, para que el juego esté balanceado.</untitled-ontology-9:restriction>
+        <rdfs:comment>Ataque básico que realiza el Brawler.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atraco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atraco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#vidaCaja"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90000</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>La caja que se tiene que destruir tiene exactamente 90000 puntos de vida.</untitled-ontology-9:restriction>
+        <rdfs:comment>Mapa donde el objetivo es romper la caja del rival.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atrapagemas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atrapagemas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#gemasParaTerminarPartida"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>El valor de gemas necesario para ganar la partida es de mínimo 10.</untitled-ontology-9:restriction>
+        <rdfs:comment>Mapa donde el objetivo es conseguir todas las gemas del mapa antes que tu rival.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atributo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atributo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los atributos no se puden comprar, ya que son parte del personaje (pasiva).</untitled-ontology-9:restriction>
+        <rdfs:comment>Características base o modificadores pasivos de un Brawler.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#BalonBrawl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#BalonBrawl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#golesParaTerminarPartida"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>EL máximo de goles que se pueden marcar es de 2.</untitled-ontology-9:restriction>
+        <rdfs:comment>Mapa donde el objetivo es marcar más goles que el rival.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esBuenoEn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAspecto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoBrawlPass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHipercarga"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRareza"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneRol"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneAspecto"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneGadget"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneHabilidadEstelar"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#numeroAtaquesPrincipales"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneVida"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13400</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Cada Brawler tiene una vida en concreto, pero hay un limite que no se puede superar (13400). También tienen un número de ataques principales, el cual tiene que estar entre 1 y 4.</untitled-ontology-9:restriction>
+        <untitled-ontology-9:restriction>Todos los Brawlers pertenecen únicamente a una rareza y tienen un rol en concreto.
+Cada uno es bueno es almenos un mapa.</untitled-ontology-9:restriction>
+        <untitled-ontology-9:restriction>Todos los Brawlers salen con un aspecto base y almenos un brawler tiene un aspecto de BrawlPass.</untitled-ontology-9:restriction>
+        <untitled-ontology-9:restriction>Todos los Brawlers tienen exactamente 2 gadgets y 2 habilidades estelares y algunos tienen hipercarga, ya que es una nueva mecánica y aún no lo tienen todos.</untitled-ontology-9:restriction>
+        <rdfs:comment>Representa los distintos personajes disponibles en el juego Brawl Stars.</rdfs:comment>
+        <rdfs:label>Personaje</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#brawlerPotenciado"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>En todas las temporadas competitivas, hay tres Brawlers que están potenciados (para simplificar el diseño hemos decidido que solo se potencia uno). Esto significa que se puede jugar con todas sus habilidades desbloqueadas (hipercarga, gadgets, habilidades estelares,...).</untitled-ontology-9:restriction>
+        <rdfs:comment>Modo de juego con reglas estructuradas y progresión en rangos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cosmético -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cosmético">
+        <rdfs:comment>Representa elementos visuales opcionales que modifican la apariencia del juego y que se puden usar en partida.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destrucción -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destrucción">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Duelo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Duelo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Evento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego"/>
+        <rdfs:comment>Representa actividades o desafíos especiales por tiempo limitado dentro del juego.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadActiva"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#seRecargaEnSegundos"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Los gadgets tiene un tiempo de enfriamiento, este tiene que ser entre 8 i 23 segundos.</untitled-ontology-9:restriction>
+        <untitled-ontology-9:restriction>Un gadget cuesta 1000 de oro.</untitled-ontology-9:restriction>
+        <rdfs:comment>Herramienta activable que te proporciona ciertas habilidades o estadísticas durante la partida.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad">
+        <rdfs:comment>Representa las diferentes habilidades que puede tener un brawler.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadActiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadActiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad"/>
+        <rdfs:comment>Habilidad que el jugador activa manualmente con un botón durante la partida.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:restriction>Una habilidad estelar cuesta 2000 de oro.</untitled-ontology-9:restriction>
+        <rdfs:comment>Mejora pasiva del Brawler. Puede mejorar sus básicos, super  y estadísticas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadActiva"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Una hipercarga cuesta 5000 de oro.</untitled-ontology-9:restriction>
+        <rdfs:comment>Mejora temporal y explosiva que potencia la super del Brawler y sus estadísticas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hockey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hockey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#perteneceATema"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#jugadoresEnPartida"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tiempoDeJuego"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Todos los mapas pertenecen a un tema, el cual le da la estètica correspondiente.</untitled-ontology-9:restriction>
+        <untitled-ontology-9:restriction>Todos los mapas tienen un mínimo de 2 jugadores y un máximo de 10 con un tiempo de juego máximo de 180 segundos (3 min.).</untitled-ontology-9:restriction>
+        <rdfs:comment>Escenario jugable donde se desarrollan las partidas. Todas las subclases representan mapas donde los objetivos son diferentes (cada una con propiedades propias).
+Para simplificar el diseño de la ontología, no hemos definido propiedades a todas las subclases.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#MapaEvento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#MapaEvento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Evento"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#tieneMapa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#esTemporal"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Tenemos que los mapas de evento son temporales. Como es herencia múltiple con evento y este tiene la propiedad &quot;tieneMapa&quot;, un mapa no puede tener mapa, entonces ponemos a esta propiedad como nula.</untitled-ontology-9:restriction>
+        <rdfs:comment>Repesenta los distintos mapas alternativos y exclusivos que hay durante un evento.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego">
+        <rdfs:comment>Representa las diferentes categorías en las que se pueden jugar las partidas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Noqueo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Noqueo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza">
+        <rdfs:comment>Todos los brawlers y skins tienen una rareza, la cual indica su nivel de exclusividad o dificultad de obtención.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Reacción -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Reacción">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cosmético"/>
+        <rdfs:comment>Representa los pines/reacciones que un jugador puede usar en partida para poder comunicarse con otros jugadores. (emotes)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Recurso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Recurso">
+        <rdfs:comment>Representa los objetos que permiten progresar en el juego, como monedas, gemas,... entre otros.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Habilidad"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#valorEnOro"/>
+                <owl:allValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#augmentaEstadistica"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <untitled-ontology-9:restriction>Un refuerzo únicamente puede mejorar una estadística del personaje y cuesta entre 1000 y 2000 de oro según su rareza.</untitled-ontology-9:restriction>
+        <rdfs:comment>Mejora para aumentar estadísticas del Brawler.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol">
+        <rdfs:comment>Todos los brawlers tienen un rol específico, el cual define su estilo de juego y su función en el equipo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadActiva"/>
+        <rdfs:comment>Habilidad poderosa que requiere carga previa a partir de sus básicos o por otros métodos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Supervivencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Supervivencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TargetaDeBatalla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TargetaDeBatalla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cosmético"/>
+        <rdfs:comment>Componente estético que mejora visualmente el aspecto de tu perfil.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema">
+        <rdfs:comment>Representa las distintas temáticas estéticas del juego.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cosmético"/>
+        <rdfs:comment>Frase que puede usar un jugador para mejorar su perfil.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ZonaRestringida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ZonaRestringida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mapa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#A_dos_cañones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#A_dos_cañones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño 5%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo 25%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad 25%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#A_puñetazo_limpio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#A_puñetazo_limpio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Amante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Amante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Apoyo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Apoyo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arenas_del_tiempo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arenas_del_tiempo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arroyo_Calavera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arroyo_Calavera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Supervivencia"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">210</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Artillero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Artillero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Asesino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Asesino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mina_rocosa"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Dorado"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Plateado"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Barrido"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Plátano_podrido"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tranquilizante"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Fuera_de_sí"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Primer_escobazo"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rey_de_las_ratas"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tanque"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10800</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Dorado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Dorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Intrépido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Intrépido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeColaboración"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Krampus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Krampus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Pizzero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Pizzero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Piñata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Piñata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Plateado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash_Plateado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aterrizaje_forzoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aterrizaje_forzoso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Balas_rebotadoras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Balas_rebotadoras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">640</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Barrido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Barrido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3200</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Basura_con_patas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Basura_con_patas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Biodomo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Biodomo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Blines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Blines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Recurso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brigada_conejil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brigada_conejil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Camino_trofeos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Camino_trofeos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ModoDeJuego"/>
+        <untitled-ontology-9:estáDisponible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:estáDisponible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Campo_Abierto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Campo_Abierto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#ZonaRestringida"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">210</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Capitán_Crow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Capitán_Crow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelito_de_menta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelito_de_menta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelo_Explosivo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelo_Explosivo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelo_tutifruti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelo_tutifruti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño 15%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo 15%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad 24%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Carga_de_super_automática -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Carga_de_super_automática">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atributo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Castillo_hinchable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Castillo_hinchable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cataplum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cataplum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3200</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caída_libre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caída_libre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cañon_explosivo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cañon_explosivo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atraco"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</untitled-ontology-9:tiempoDeJuego>
+        <untitled-ontology-9:vidaCaja rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70000</untitled-ontology-9:vidaCaja>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arroyo_Calavera"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Dorado"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Loki"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Sombrero_de_bufón"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Dado_trucado"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grageas"/>
+        <untitled-ontology-9:tieneHabilidad rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super_aleatorio"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Lluvia_de_cascabeles"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Veo_veo"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Caramelo_tutifruti"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destructor"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7000</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Dorado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Dorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Espíritu_Silvestre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Espíritu_Silvestre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Guardián_Lunar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Guardián_Lunar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Loki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Loki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Oscuro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Oscuro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeEvento"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Especial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Plateado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Plateado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Uno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester_Uno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDeColaboración"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Choque_mate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Choque_mate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Con_una_sola_mano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Con_una_sola_mano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Coraza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Coraza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cañon_explosivo"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Calavera"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Fénix"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Triple_daga"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Plumaje_protector"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Toxina_ralentizante"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cría_cuervos"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Extratóxico"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cuchillos_multiusos"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Asesino"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4800</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Calavera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Calavera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Dorado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Dorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Fénix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Fénix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:perteneceATema rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#En_llamas"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">299</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Guardián_Lunar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_Guardián_Lunar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">199</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_plateado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow_plateado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cría_cuervos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cría_cuervos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cuchillos_multiusos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cuchillos_multiusos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño 25%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo 5%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad 24%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Dado_trucado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Dado_trucado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Daño -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Daño">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destino_del_infinito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destino_del_infinito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destrucción"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destructor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destructor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Diamante_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Diamante_2023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TargetaDeBatalla"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Disparo_experto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Disparo_experto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Doctor_Edgar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Doctor_Edgar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:perteneceATema rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Biodomo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Duplicadores_de_xp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Duplicadores_de_xp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Recurso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Estadio_Brawl"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Gatillo_Veloz"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Ángel_Caído"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Furia_desatada"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Coraza"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Por_los_aires"/>
+        <untitled-ontology-9:tieneHabilidad rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Carga_de_super_automática"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#A_puñetazo_limpio"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aterrizaje_forzoso"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Explosión"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Asesino"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6600</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Dorado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Dorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Enmascarado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Enmascarado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Especial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Gatillo_Veloz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Gatillo_Veloz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Ladrón_del_desierto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Ladrón_del_desierto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:perteneceATema rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arenas_del_tiempo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">199</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Meca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Meca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">299</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Plateado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Plateado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Ángel_Caído -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar_Ángel_Caído">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoHipercargado"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercargado"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#El_rey_de_los_trucos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#El_rey_de_los_trucos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#En_llamas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#En_llamas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Escudo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Escudo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Especial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Especial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Estadio_Brawl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Estadio_Brawl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#BalonBrawl"/>
+        <untitled-ontology-9:golesParaTerminarPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-9:golesParaTerminarPartida>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Explosión -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Explosión">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Extratóxico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Extratóxico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Factor_X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Factor_X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Felicidad_Shelly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Felicidad_Shelly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Reacción"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Fuera_de_sí -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Fuera_de_sí">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Furia_desatada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Furia_desatada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1080</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gemas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gemas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Recurso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grageas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grageas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Campo_Abierto"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Conejito"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Protector"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cataplum"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Radiodifusión"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Torre_de_vigilancia"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Factor_X"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ronda_de_vigilancia"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#La_gromba_es_la_bomba"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Artillero"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5600</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Conejito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Conejito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:perteneceATema rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brigada_conejil"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">79</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Dasis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Dasis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">199</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Dorado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Dorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Plateado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Plateado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Protector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom_Protector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gromba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gromba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercargado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercargado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Inicial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Inicial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#La_gromba_es_la_bomba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#La_gromba_es_la_bomba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño 24%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo 5%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad 24%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario_2025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Legendario_2025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TargetaDeBatalla"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Lluvia_de_cascabeles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Lluvia_de_cascabeles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mina_rocosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mina_rocosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atrapagemas"/>
+        <untitled-ontology-9:gemasParaTerminarPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</untitled-ontology-9:gemasParaTerminarPartida>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Monedas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Monedas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Recurso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico_2024">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TargetaDeBatalla"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ofensa_olorosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ofensa_olorosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#MapaEvento"/>
+        <untitled-ontology-9:esTemporal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:esTemporal>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Parque_de_bolas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Parque_de_bolas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Paso_al_frente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Paso_al_frente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Perdigones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Perdigones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">600</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Picapica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Picapica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Plumaje_protector -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Plumaje_protector">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Plátano_podrido -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Plátano_podrido">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Por_los_aires -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Por_los_aires">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Presidente_de_Brawl_Stars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Presidente_de_Brawl_Stars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Edgar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Primer_escobazo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Primer_escobazo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Primeros_auxilios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Primeros_auxilios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Radiodifusión -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Radiodifusión">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Realeza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Realeza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tema"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Regaliz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Regaliz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Retirada_robótica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Retirada_robótica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rey_de_las_ratas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rey_de_las_ratas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño 5%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo 25%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad 25%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rey_del_rebote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rey_del_rebote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+        <untitled-ontology-9:esHipercargaDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico"/>
+        <untitled-ontology-9:augmentaEstadistica>Daño 25%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Escudo 5%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:augmentaEstadistica>Velocidad 26%</untitled-ontology-9:augmentaEstadistica>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Roca_de_belle"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Luciérnaga"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Soberano"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Balas_rebotadoras"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Castillo_hinchable"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Parque_de_bolas"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Retirada_robótica"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Superrebote"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rey_del_rebote"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destructor"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5600</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Chaqueta_roja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Chaqueta_roja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Especial"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">29</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Dorado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Dorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Gallina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Gallina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Huevo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Huevo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Aspecto"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+        <untitled-ontology-9:valorBaseEnGemas rdf:datatype="http://www.w3.org/2001/XMLSchema#int">199</untitled-ontology-9:valorBaseEnGemas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Luciérnaga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Luciérnaga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoBrawlPass"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Plateado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Plateado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Soberano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico_Soberano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoHipercargado"/>
+        <untitled-ontology-9:perteneceATema rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Realeza"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercargado"/>
+        <untitled-ontology-9:compraConBlines rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:compraConBlines>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Roca_de_belle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Roca_de_belle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Noqueo"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Roedores_colaboradores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Roedores_colaboradores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rompedientes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rompedientes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ronda_de_vigilancia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ronda_de_vigilancia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Saltimbanqui -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Saltimbanqui">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Salto_sincronizado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Salto_sincronizado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hockey"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Salud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Salud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Brawler"/>
+        <untitled-ontology-9:esBuenoEn rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Sin_rendición"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Bailarina_Oriental"/>
+        <untitled-ontology-9:tieneAspecto rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Plateada"/>
+        <untitled-ontology-9:tieneAtaque rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Perdigones"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Paso_al_frente"/>
+        <untitled-ontology-9:tieneGadget rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tiro_al_plato"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Choque_mate"/>
+        <untitled-ontology-9:tieneHabilidadEstelar rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Primeros_auxilios"/>
+        <untitled-ontology-9:tieneHipercarga rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#A_dos_cañones"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Inicial"/>
+        <untitled-ontology-9:tieneRol rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Destructor"/>
+        <untitled-ontology-9:numeroAtaquesPrincipales rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</untitled-ontology-9:numeroAtaquesPrincipales>
+        <untitled-ontology-9:tieneVida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7400</untitled-ontology-9:tieneVida>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Bailarina_Oriental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Bailarina_Oriental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoBrawlPass"/>
+        <untitled-ontology-9:perteneceATema rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Arenas_del_tiempo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Dorada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Dorada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoDorado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Plateada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly_Plateada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AspectoPlateado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Sin_rendición -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Sin_rendición">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Duelo"/>
+        <untitled-ontology-9:jugadoresEnPartida rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-9:jugadoresEnPartida>
+        <untitled-ontology-9:tiempoDeJuego rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</untitled-ontology-9:tiempoDeJuego>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Sombrero_de_bufón -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Sombrero_de_bufón">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1280</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super_aleatorio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super_aleatorio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Atributo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Superbalas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Superbalas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Supercarga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Supercarga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Superrebote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Superrebote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rico"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tanque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tanque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Temporada_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Temporada_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo"/>
+        <untitled-ontology-9:brawlerPotenciado rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+        <untitled-ontology-9:tieneMapa rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mina_rocosa"/>
+        <untitled-ontology-9:estáDisponible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:estáDisponible>
+        <untitled-ontology-9:relaciónTemporadaCompetitiva>Brawl Cup</untitled-ontology-9:relaciónTemporadaCompetitiva>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Temporada_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Temporada_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo"/>
+        <untitled-ontology-9:brawlerPotenciado rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+        <untitled-ontology-9:tieneMapa rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Cañon_explosivo"/>
+        <untitled-ontology-9:estáDisponible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:estáDisponible>
+        <untitled-ontology-9:relaciónTemporadaCompetitiva>LCQ</untitled-ontology-9:relaciónTemporadaCompetitiva>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Temporada_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Temporada_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Competitivo"/>
+        <untitled-ontology-9:brawlerPotenciado rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+        <untitled-ontology-9:tieneMapa rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Roca_de_belle"/>
+        <untitled-ontology-9:estáDisponible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-9:estáDisponible>
+        <untitled-ontology-9:relaciónTemporadaCompetitiva>Final Mundial</untitled-ontology-9:relaciónTemporadaCompetitiva>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tiempo_de_recarga_del_gadget -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tiempo_de_recarga_del_gadget">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tirador_de_élite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tirador_de_élite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tiro_al_plato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tiro_al_plato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Torre_de_vigilancia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Torre_de_vigilancia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Grom"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Toxina_ralentizante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Toxina_ralentizante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tranquilizante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Tranquilizante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+        <untitled-ontology-9:esGadgetDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Ash"/>
+        <untitled-ontology-9:seRecargaEnSegundos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</untitled-ontology-9:seRecargaEnSegundos>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Triple_daga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Triple_daga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+        <untitled-ontology-9:tieneDañoDe rdf:datatype="http://www.w3.org/2001/XMLSchema#int">640</untitled-ontology-9:tieneDañoDe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Uno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Uno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Evento"/>
+        <untitled-ontology-9:duraciónEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</untitled-ontology-9:duraciónEvento>
+        <untitled-ontology-9:estáDisponible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-9:estáDisponible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Velocidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Velocidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Velocidad_de_recarga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Velocidad_de_recarga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Veneno_Letal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Veneno_Letal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Mítico"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Veo_veo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Veo_veo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#HabilidadEstelar"/>
+        <untitled-ontology-9:esHabilidadEstelarDe rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Chester"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Visión -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Visión">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Refuerzo"/>
+        <untitled-ontology-9:tieneRareza rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#SuperEspecial"/>
+        <untitled-ontology-9:valorEnOro rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</untitled-ontology-9:valorEnOro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Épico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Rareza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡Buena_Partida!_Rico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡Buena_Partida!_Rico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Reacción"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡Croc,_croc! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡Croc,_croc!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Crow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡Gracias!_Grom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡Gracias!_Grom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Reacción"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡No_hay_tiempo_para_explicarlo! -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#¡No_hay_tiempo_para_explicarlo!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#TítuloJugador"/>
+        <untitled-ontology-9:perteneceA rdf:resource="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Shelly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#AtaquePrincipal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Gadget"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Hipercarga"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2025/3/untitled-ontology-9#Super"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
